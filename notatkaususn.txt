@@ -1,0 +1,8 @@
+Męż - daje hp / atakujesz tym wroga
+Ref
+Wiz - Ustala ile dostajesz skarbow
+Int
+Chr
+Wola
+Duch
+Szcz - Ustala ile dostajesz skarbow
