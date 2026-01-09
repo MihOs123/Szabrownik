@@ -89,6 +89,8 @@ class SzabrownikFrame: public wxFrame
         void KlikPoleFunkcja(int a);
         void KluczLapacz(wxKeyEvent &event);
         void OdswiezStaty();
+        bool CzyMogeTamWejsc(int a);
+        void InterakcjaZPolem();
 
 
 

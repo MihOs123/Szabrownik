@@ -5258,3 +5258,74 @@
 
 1745522469 d:\cpp-dodatki\wxwidgets-3.2.8-mono64\include\wx\generic\statline.h
 
+1767967592 source:c:\users\iza\onedrive\pulpit\szabrownik-main\resource.rc
+	"wx/msw/wx.rc"
+
+1767967592 source:c:\users\iza\onedrive\pulpit\szabrownik-main\szabrownikapp.cpp
+	"SzabrownikApp.h"
+	"SzabrownikMain.h"
+	<wx/image.h>
+
+1767967592 c:\users\iza\onedrive\pulpit\szabrownik-main\szabrownikapp.h
+	<wx/app.h>
+
+1767970908 c:\users\iza\onedrive\pulpit\szabrownik-main\szabrownikmain.h
+	<map>
+	<vector>
+	<wx/bmpbuttn.h>
+	<wx/button.h>
+	<wx/frame.h>
+	<wx/panel.h>
+	<wx/sizer.h>
+	<wx/statbmp.h>
+	<wx/statline.h>
+	<wx/stattext.h>
+
+1745522469 c:\cpp-dodatki\wxwidgets-3.2.8-mono64\include\wx\statline.h
+	"wx/defs.h"
+	"wx/control.h"
+	"wx/univ/statline.h"
+	"wx/msw/statline.h"
+	"wx/gtk/statline.h"
+	"wx/gtk1/statline.h"
+	"wx/osx/statline.h"
+	"wx/qt/statline.h"
+	"wx/generic/statline.h"
+
+1745522469 c:\cpp-dodatki\wxwidgets-3.2.8-mono64\include\wx\univ\statline.h
+
+1745522469 c:\cpp-dodatki\wxwidgets-3.2.8-mono64\include\wx\msw\statline.h
+
+1745522469 c:\cpp-dodatki\wxwidgets-3.2.8-mono64\include\wx\gtk\statline.h
+	"wx/defs.h"
+
+1745522469 c:\cpp-dodatki\wxwidgets-3.2.8-mono64\include\wx\gtk1\statline.h
+	"wx/defs.h"
+
+1745522469 c:\cpp-dodatki\wxwidgets-3.2.8-mono64\include\wx\osx\statline.h
+
+1745522469 c:\cpp-dodatki\wxwidgets-3.2.8-mono64\include\wx\qt\statline.h
+
+1745522469 c:\cpp-dodatki\wxwidgets-3.2.8-mono64\include\wx\generic\statline.h
+
+1767970928 source:c:\users\iza\onedrive\pulpit\szabrownik-main\szabrownikmain.cpp
+	"SzabrownikMain.h"
+	<wx/msgdlg.h>
+	<wx/bitmap.h>
+	<wx/font.h>
+	<wx/image.h>
+	<wx/intl.h>
+	<wx/settings.h>
+	<wx/string.h>
+	<memory>
+	<vector>
+	"SzabrownikDwa.h"
+	<iostream>
+	<string>
+
+1767970908 c:\users\iza\onedrive\pulpit\szabrownik-main\szabrownikdwa.h
+	<map>
+	<vector>
+	<iostream>
+	<fstream>
+

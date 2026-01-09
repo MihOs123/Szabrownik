@@ -208,30 +208,208 @@ void SzabrownikFrame::WygranaSprawdzacz(){
     }
 }
 
+bool SzabrownikFrame::CzyMogeTamWejsc(int a)
+{
+    if(listapokoi[a].Sasiad == true && listapokoi[a].Zawartosc != 2 && listapokoi[Bohater.AktualnyPokoj].Zawartosc != 3 && listapokoi[Bohater.AktualnyPokoj].Zawartosc != 6){
+        return true;}
+    else{
+        return false;}
+}
+
+void SzabrownikFrame::InterakcjaZPolem(){
+    //POKÓJ PUSTY
+    if(listapokoi[Bohater.AktualnyPokoj].Zawartosc == 1){
+        int test = RzutKoscia(10);
+        if(test < 6){
+            Bohater.Zdrowie = Bohater.Zdrowie + RzutKoscia(2);
+            if(Bohater.Zdrowie > Bohater.MAXZdrowie){
+                Bohater.Zdrowie = Bohater.MAXZdrowie;
+            }
+            wxMessageBox(_("Odpoczynek odnowił ci trochę zdrowia"),"Odpoczynek", wxOK | wxICON_INFORMATION);
+        }
+        if(test > 5 && test < 10){
+            Bohater.Zdrowie = Bohater.Zdrowie - RzutKoscia(4);
+            if(Bohater.Zdrowie < 1){
+                wxMessageBox(_("Potwór cię zgładził gdy odpoczywałeś! Koniec Gry!"),"Odpoczynek - Zasadzka", wxOK | wxICON_WARNING);
+                GuzikStartGryFunkcja();
+            }
+            else{
+                wxMessageBox(_("Gdy spałeś napadł cię potwór! Tracisz zdrowie"),"Odpoczynek - Zasadzka", wxOK | wxICON_WARNING);
+            }
+        }
+        if(test == 10){
+            Bohater.Zloto = Bohater.Zloto / 2;
+            wxMessageBox(_("Gdy spałeś ktoś cię okradł! Tracisz trochę złota"),"Odpoczynek - Zasadzka", wxOK | wxICON_WARNING);
+        }
+    }
+    //POKÓJ PUSTY
+
+    //POKÓJ Z POTWOREM
+    if(listapokoi[Bohater.AktualnyPokoj].Zawartosc == 3){
+        int a = RzutKoscia(Bohater.MEZ);
+        if(a < listapokoi[Bohater.AktualnyPokoj].SilaPotwora){
+            Bohater.Zdrowie = Bohater.Zdrowie-2;
+            OdswiezStaty();
+            if(Bohater.Zdrowie < 1){
+                wxMessageBox(_("Potwór cię zgładził! Koniec Gry!"),"WALKA!", wxOK | wxICON_WARNING);
+                GuzikStartGryFunkcja();
+            }
+            else{
+                wxMessageBox(_("Potwór cię uderzył! Straciłeś 2 Zdrowia!"),"WALKA!", wxOK | wxICON_WARNING);
+            }
+
+        }
+        else{
+            Bohater.Zloto = Bohater.Zloto + (listapokoi[Bohater.AktualnyPokoj].SilaPotwora*2) + (PoziomLochu*2);
+            listapokoi[Bohater.AktualnyPokoj].Zawartosc = 1;
+            listapokoi[Bohater.AktualnyPokoj].Obraz = "Nic.png";
+            listapokoi[Bohater.AktualnyPokoj].ObrazGr = "NicG.png";
+            listapokoi[Bohater.AktualnyPokoj].ObrazK = "NicK.png";
+            listapokoi[Bohater.AktualnyPokoj].ObrazGrK = "NicGK.png";
+            OdkrywaczPokoi(Bohater.AktualnyPokoj);
+            StaticText24->SetLabel(std::to_string(Bohater.Zloto));
+            wxMessageBox(_("Potwór został zgładzony! Zyskałeś jego złoto"),"WALKA!", wxOK | wxICON_INFORMATION);
+            WygranaSprawdzacz();
+
+        }
+    }
+    //POKÓJ Z POTWOREM
+
+    //POKÓJ ZE SKARBEM
+    if(listapokoi[Bohater.AktualnyPokoj].Zawartosc == 4){
+        listapokoi[Bohater.AktualnyPokoj].Zawartosc = 1;
+        listapokoi[Bohater.AktualnyPokoj].Obraz = "Nic.png";
+        listapokoi[Bohater.AktualnyPokoj].ObrazGr = "NicG.png";
+        listapokoi[Bohater.AktualnyPokoj].ObrazK = "NicK.png";
+        listapokoi[Bohater.AktualnyPokoj].ObrazGrK = "NicGK.png";
+        Bohater.Zloto = Bohater.Zloto + RzutKoscia(Bohater.WIZ) + RzutKoscia(Bohater.SZCZ) + PoziomLochu;
+        StaticText24->SetLabel(std::to_string(Bohater.Zloto));
+        OdkrywaczPokoi(Bohater.AktualnyPokoj);
+        WygranaSprawdzacz();
+    }
+    //POKÓJ ZE SKARBEM
+
+    //POKÓJ Z ODPOCZYNKIEM
+    if(listapokoi[Bohater.AktualnyPokoj].Zawartosc == 5){
+        Bohater.Zdrowie = Bohater.Zdrowie + RzutKoscia(4) + 2;
+        if(Bohater.Zdrowie > Bohater.MAXZdrowie){
+            Bohater.Zdrowie = Bohater.MAXZdrowie;
+        }
+        wxMessageBox(_("Odpoczynek odnowił ci trochę zdrowia"),"Odpoczynek", wxOK | wxICON_INFORMATION);
+
+        listapokoi[Bohater.AktualnyPokoj].Zawartosc = 1;
+        listapokoi[Bohater.AktualnyPokoj].Obraz = "Nic.png";
+        listapokoi[Bohater.AktualnyPokoj].ObrazGr = "NicG.png";
+        listapokoi[Bohater.AktualnyPokoj].ObrazK = "NicK.png";
+        listapokoi[Bohater.AktualnyPokoj].ObrazGrK = "NicGK.png";
+    }
+    //POKÓJ Z ODPOCZYNKIEM
+
+    //POKOJ Z PULAPKA
+    if(listapokoi[Bohater.AktualnyPokoj].Zawartosc == 6){
+        int test = RzutKoscia(Bohater.REF) + RzutKoscia(Bohater.INT);
+        if(test < 10){
+            Bohater.Zdrowie = Bohater.Zdrowie-2;
+            if(Bohater.Zdrowie < 1){
+                wxMessageBox(_("Umarłeś w pułapce! Koniec Gry!"),"PUŁAPKA!", wxOK | wxICON_WARNING);
+                GuzikStartGryFunkcja();
+            }
+            else{
+                wxMessageBox(_("Pułapka cię zraniła i się rozbroiła!"),"PUŁAPKA!", wxOK | wxICON_INFORMATION);
+            }
+        }
+        else{
+            Bohater.Zloto = Bohater.Zloto + (test - 8) + PoziomLochu;
+            wxMessageBox(_("Pułapka została rozbrojona! Znalazłeś też trochę skarbów"),"PUŁAPKA!", wxOK | wxICON_INFORMATION);
+        }
+
+        listapokoi[Bohater.AktualnyPokoj].Zawartosc = 1;
+        listapokoi[Bohater.AktualnyPokoj].Obraz = "Nic.png";
+        listapokoi[Bohater.AktualnyPokoj].ObrazGr = "NicG.png";
+        listapokoi[Bohater.AktualnyPokoj].ObrazK = "NicK.png";
+        listapokoi[Bohater.AktualnyPokoj].ObrazGrK = "NicGK.png";
+        OdswiezStaty();
+    }
+    //POKOJ Z PULAPKA
+
+    //POKOJ Z ZEJSCIEM NIZEJ
+    if(listapokoi[Bohater.AktualnyPokoj].Zawartosc == 7){
+        for(int i = 0; i < 49; i++){
+            pola[i]->SetBitmap(wxImage(_T("Nieznany.png")));
+            listapokoi[i].Odkryty = false;
+            listapokoi[i].Sasiad = false;
+        }
+        PoziomLochu = PoziomLochu + 1;
+
+        listapokoi = generacjaPokoi(49, PoziomLochu);
+
+        Spawner();
+
+        StaticText2->SetLabel(_("LOCH | POZIOM ") + std::to_string(PoziomLochu));
+    }
+    //POKOJ Z ZEJSCIEM NIZEJ
+
+    //Tak na wszelki wypadek
+    OdswiezStaty();
+    OdkrywaczPokoi(Bohater.AktualnyPokoj);
+
+}
+
+
 void SzabrownikFrame::KluczLapacz(wxKeyEvent &event)
 {
     int keyCode = event.GetKeyCode();
     int a = Bohater.KliknietyPokoj;
 
+
+
     if (keyCode == 'A' || keyCode == 'a')
     {
         if(a != 0){
-            KlikPoleFunkcja(a-1);}
+            KlikPoleFunkcja(a-1);
+            if(CzyMogeTamWejsc(a-1) == true){
+                Bohater.AktualnyPokoj = a-1;
+                KlikPoleFunkcja(Bohater.AktualnyPokoj);
+                OdkrywaczPokoi(a-1);
+            }
+        }
     }
     if (keyCode == 'S' || keyCode == 's')
     {
         if(a < 42){
-        KlikPoleFunkcja(a+7);}
+            KlikPoleFunkcja(a+7);
+            if(CzyMogeTamWejsc(a+7) == true){
+                Bohater.AktualnyPokoj = a+7;
+                KlikPoleFunkcja(Bohater.AktualnyPokoj);
+                OdkrywaczPokoi(a+7);
+            }
+        }
     }
     if (keyCode == 'D' || keyCode == 'd')
     {
-        if(a != 48)
-        KlikPoleFunkcja(a+1);
+        if(a != 48){
+            KlikPoleFunkcja(a+1);
+            if(CzyMogeTamWejsc(a+1) == true){
+                Bohater.AktualnyPokoj = a+1;
+                KlikPoleFunkcja(Bohater.AktualnyPokoj);
+                OdkrywaczPokoi(a+1);
+            }
+        }
     }
     if (keyCode == 'W' || keyCode == 'w')
     {
-        if(a > 6)
-        KlikPoleFunkcja(a-7);
+        if(a > 6){
+            KlikPoleFunkcja(a-7);
+            if(CzyMogeTamWejsc(a-7) == true){
+                Bohater.AktualnyPokoj = a-7;
+                KlikPoleFunkcja(Bohater.AktualnyPokoj);
+                OdkrywaczPokoi(a-7);
+            }
+        }
+    }
+    if (keyCode == ' ')
+    {
+        InterakcjaZPolem();
     }
      return; // Pozwól na normalne przetworzenie innych klawiszy
 }
@@ -249,10 +427,16 @@ void SzabrownikFrame::KlikPoleFunkcja(int a){
     else{
         pola[Bohater.KliknietyPokoj]->SetBitmap(wxImage("Nieznany.png"));
     }
-    Button4->Enable(true);
-    Button4->SetLabel("Interakcja");
+
 
     Bohater.KliknietyPokoj = a;
+
+    Button4->Enable(false);
+    if(Bohater.KliknietyPokoj == Bohater.AktualnyPokoj){
+    Button4->Enable(true);}
+    Button4->SetLabel("Interakcja");
+
+
     StaticText12->SetLabel("Pokoj nr. " + std::to_string(a+1));
     if(listapokoi[a].Odkryty == true){
         if(listapokoi[a].Zawartosc == 1){
