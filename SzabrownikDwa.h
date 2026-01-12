@@ -225,7 +225,7 @@ void SzabrownikFrame::InterakcjaZPolem(){
             if(Bohater.Zdrowie > Bohater.MAXZdrowie){
                 Bohater.Zdrowie = Bohater.MAXZdrowie;
             }
-            wxMessageBox(_("Odpoczynek odnowił ci trochę zdrowia"),"Odpoczynek", wxOK | wxICON_INFORMATION);
+            wxMessageBox(_("Odpoczynek odnowił ci trochę zdrowia"),"Odpoczynek", wxOK | wxICON_NONE);
         }
         if(test > 5 && test < 10){
             Bohater.Zdrowie = Bohater.Zdrowie - RzutKoscia(4);
@@ -234,12 +234,12 @@ void SzabrownikFrame::InterakcjaZPolem(){
                 GuzikStartGryFunkcja();
             }
             else{
-                wxMessageBox(_("Gdy spałeś napadł cię potwór! Tracisz zdrowie"),"Odpoczynek - Zasadzka", wxOK | wxICON_WARNING);
+                wxMessageBox(_("Gdy spałeś napadł cię potwór! Tracisz zdrowie"),"Odpoczynek - Zasadzka", wxOK | wxICON_NONE);
             }
         }
         if(test == 10){
             Bohater.Zloto = Bohater.Zloto / 2;
-            wxMessageBox(_("Gdy spałeś ktoś cię okradł! Tracisz trochę złota"),"Odpoczynek - Zasadzka", wxOK | wxICON_WARNING);
+            wxMessageBox(_("Gdy spałeś ktoś cię okradł! Tracisz trochę złota"),"Odpoczynek - Zasadzka", wxOK | wxICON_NONE);
         }
     }
     //POKÓJ PUSTY
@@ -255,7 +255,7 @@ void SzabrownikFrame::InterakcjaZPolem(){
                 GuzikStartGryFunkcja();
             }
             else{
-                wxMessageBox(_("Potwór cię uderzył! Straciłeś 2 Zdrowia!"),"WALKA!", wxOK | wxICON_WARNING);
+                wxMessageBox(_("Potwór cię uderzył! Straciłeś 2 Zdrowia!"),"WALKA!", wxOK | wxICON_NONE);
             }
 
         }
@@ -295,7 +295,7 @@ void SzabrownikFrame::InterakcjaZPolem(){
         if(Bohater.Zdrowie > Bohater.MAXZdrowie){
             Bohater.Zdrowie = Bohater.MAXZdrowie;
         }
-        wxMessageBox(_("Odpoczynek odnowił ci trochę zdrowia"),"Odpoczynek", wxOK | wxICON_INFORMATION);
+        wxMessageBox(_("Odpoczynek odnowił ci trochę zdrowia"),"Odpoczynek", wxOK | wxICON_NONE);
 
         listapokoi[Bohater.AktualnyPokoj].Zawartosc = 1;
         listapokoi[Bohater.AktualnyPokoj].Obraz = "Nic.png";
@@ -311,16 +311,16 @@ void SzabrownikFrame::InterakcjaZPolem(){
         if(test < 10){
             Bohater.Zdrowie = Bohater.Zdrowie-2;
             if(Bohater.Zdrowie < 1){
-                wxMessageBox(_("Umarłeś w pułapce! Koniec Gry!"),"PUŁAPKA!", wxOK | wxICON_WARNING);
+                wxMessageBox(_("Umarłeś w pułapce! Koniec Gry!"),_("PUŁAPKA!"), wxOK | wxICON_WARNING);
                 GuzikStartGryFunkcja();
             }
             else{
-                wxMessageBox(_("Pułapka cię zraniła i się rozbroiła!"),"PUŁAPKA!", wxOK | wxICON_INFORMATION);
+                wxMessageBox(_("Pułapka cię zraniła i się rozbroiła!"),_("PUŁAPKA!"), wxOK | wxICON_NONE);
             }
         }
         else{
             Bohater.Zloto = Bohater.Zloto + (test - 8) + PoziomLochu;
-            wxMessageBox(_("Pułapka została rozbrojona! Znalazłeś też trochę skarbów"),"PUŁAPKA!", wxOK | wxICON_INFORMATION);
+            wxMessageBox(_("Pułapka została rozbrojona! Znalazłeś też trochę skarbów"),_("PUŁAPKA!"), wxOK | wxICON_NONE);
         }
 
         listapokoi[Bohater.AktualnyPokoj].Zawartosc = 1;

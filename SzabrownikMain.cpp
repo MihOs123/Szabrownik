@@ -364,7 +364,29 @@ void SzabrownikFrame::OnGUZIK_WYJSCIEClick(wxCommandEvent& event)
 void SzabrownikFrame::OnGUZIK_CREDITSClick(wxCommandEvent& event)
 
 {
-     wxMessageBox("Autor: Kostek i Koziol \nWersja: 0.1", _("O Twórcach"), wxOK | wxICON_INFORMATION);
+         // 1. Ukryj bieżące okno (SzabrownikFrame)
+    this->Hide();
+
+    // 2. Jeśli TestFrame już istnieje, pokaż je
+    if (m_test)
+    {
+        m_test->Show();
+        m_test->Raise(); // Przenieś na wierzch
+        m_test->SetFocus(); // Ustaw fokus
+    }
+    else
+    {
+        // 3. Jeśli nie istnieje, utwórz nowe okno
+        m_test = new Test(this); // Przekazujemy this jako parent
+
+        // Ustaw rozmiar i pozycję (opcjonalnie)
+        m_test->SetSize(this->GetSize());
+        m_test->SetPosition(this->GetPosition());
+
+        m_test->Show();
+    }
+
+     /*wxMessageBox("Autor: Kostek i Koziol \nWersja: 0.1", _("O Twórcach"), wxOK | wxICON_INFORMATION);*/
 }
 
 void SzabrownikFrame::OnPanel2Paint(wxPaintEvent& event)

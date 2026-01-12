@@ -12,6 +12,8 @@
 #include <map>
 #include <vector>
 
+#include "Test.h"
+
 //(*Headers(SzabrownikFrame)
 #include <wx/bmpbuttn.h>
 #include <wx/button.h>
@@ -92,6 +94,8 @@ class SzabrownikFrame: public wxFrame
         bool CzyMogeTamWejsc(int a);
         void InterakcjaZPolem();
 
+
+        Test* m_test;
 
 
     private:

@@ -70,16 +70,20 @@
 		<Unit filename="SzabrownikDwa.h" />
 		<Unit filename="SzabrownikMain.cpp" />
 		<Unit filename="SzabrownikMain.h" />
+		<Unit filename="Test.cpp" />
+		<Unit filename="Test.h" />
 		<Unit filename="resource.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
 		<Unit filename="wxsmith/Szabrownikframe.wxs" />
+		<Unit filename="wxsmith/Test.wxs" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 			<wxsmith version="1">
 				<gui name="wxWidgets" src="SzabrownikApp.cpp" main="SzabrownikFrame" init_handlers="necessary" language="CPP" />
 				<resources>
 					<wxFrame wxs="wxsmith/Szabrownikframe.wxs" src="SzabrownikMain.cpp" hdr="SzabrownikMain.h" fwddecl="0" i18n="1" name="SzabrownikFrame" language="CPP" />
+					<wxFrame wxs="wxsmith/Test.wxs" src="Test.cpp" hdr="Test.h" fwddecl="0" i18n="1" name="Test" language="CPP" />
 				</resources>
 			</wxsmith>
 		</Extensions>
