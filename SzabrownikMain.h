@@ -12,6 +12,8 @@
 #include <map>
 #include <vector>
 
+#include "Test.h"
+
 //(*Headers(SzabrownikFrame)
 #include <wx/bmpbuttn.h>
 #include <wx/button.h>
@@ -44,6 +46,16 @@ class Szabrownik
         int AktualnyPokoj = -1;
         int KliknietyPokoj;
         int PzLochu;
+
+        int Bron;
+        int Zbroja = 0;
+        int Akcesorium;
+        int Przedmiot = 1;
+        int StatDoWalki; //1 - Męż, 2 - Ref, 3 - Duch
+
+        int Obrona = 0;
+        int BonusAtaku = 0;
+
 
         void WylosujStaty();
 
@@ -89,7 +101,12 @@ class SzabrownikFrame: public wxFrame
         void KlikPoleFunkcja(int a);
         void KluczLapacz(wxKeyEvent &event);
         void OdswiezStaty();
+        bool CzyMogeTamWejsc(int a);
+        void InterakcjaZPolem();
+        void LosowanieSkarbow();
 
+
+        Test* m_test;
 
 
     private:
@@ -131,21 +148,34 @@ class SzabrownikFrame: public wxFrame
         static const wxWindowID ID_STATICLINE3;
         static const wxWindowID ID_STATICTEXT24;
         static const wxWindowID ID_STATICTEXT25;
+        static const wxWindowID ID_STATICBITMAP2;
         static const wxWindowID ID_STATICTEXT26;
         static const wxWindowID ID_STATICTEXT27;
+        static const wxWindowID ID_STATICBITMAP3;
+        static const wxWindowID ID_STATICTEXT12;
+        static const wxWindowID ID_STATICTEXT15;
+        static const wxWindowID ID_STATICLINE1;
+        static const wxWindowID ID_STATICTEXT28;
+        static const wxWindowID ID_STATICTEXT29;
+        static const wxWindowID ID_STATICTEXT30;
+        static const wxWindowID ID_STATICTEXT31;
+        static const wxWindowID ID_STATICTEXT32;
+        static const wxWindowID ID_STATICTEXT33;
+        static const wxWindowID ID_STATICTEXT34;
+        static const wxWindowID ID_STATICTEXT35;
+        static const wxWindowID ID_STATICTEXT36;
         static const wxWindowID ID_STATICTEXT2;
         static const wxWindowID ID_BITMAPBUTTON1;
         static const wxWindowID ID_BUTTON3;
         static const wxWindowID ID_BUTTON1;
         static const wxWindowID ID_STATICTEXT3;
         static const wxWindowID ID_STATICBITMAP1;
-        static const wxWindowID ID_STATICTEXT12;
         static const wxWindowID ID_STATICTEXT13;
         static const wxWindowID ID_STATICTEXT14;
         static const wxWindowID ID_BUTTON2;
         static const wxWindowID ID_BUTTON7;
         static const wxWindowID ID_PANEL1;
-        static const wxWindowID ID_STATICTEXT15;
+        static const wxWindowID ID_STATICBITMAP4;
         static const wxWindowID ID_BUTTON4;
         static const wxWindowID ID_BUTTON5;
         static const wxWindowID ID_BUTTON6;
@@ -164,6 +194,10 @@ class SzabrownikFrame: public wxFrame
         wxPanel* Panel2;
         wxPanel* panel_gra;
         wxStaticBitmap* StaticBitmap1;
+        wxStaticBitmap* StaticBitmap2;
+        wxStaticBitmap* StaticBitmap3;
+        wxStaticBitmap* StaticBitmap4;
+        wxStaticLine* StaticLine1;
         wxStaticLine* StaticLine3;
         wxStaticText* StaticText10;
         wxStaticText* StaticText11;
@@ -183,7 +217,17 @@ class SzabrownikFrame: public wxFrame
         wxStaticText* StaticText24;
         wxStaticText* StaticText25;
         wxStaticText* StaticText26;
+        wxStaticText* StaticText27;
+        wxStaticText* StaticText28;
+        wxStaticText* StaticText29;
         wxStaticText* StaticText2;
+        wxStaticText* StaticText30;
+        wxStaticText* StaticText31;
+        wxStaticText* StaticText32;
+        wxStaticText* StaticText33;
+        wxStaticText* StaticText34;
+        wxStaticText* StaticText35;
+        wxStaticText* StaticText36;
         wxStaticText* StaticText3;
         wxStaticText* StaticText4;
         wxStaticText* StaticText5;
@@ -191,7 +235,6 @@ class SzabrownikFrame: public wxFrame
         wxStaticText* StaticText7;
         wxStaticText* StaticText8;
         wxStaticText* StaticText9;
-        wxStaticText* TEXT_TYTUL;
         //*)
 
         DECLARE_EVENT_TABLE()

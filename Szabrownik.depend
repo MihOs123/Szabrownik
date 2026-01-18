@@ -5258,3 +5258,294 @@
 
 1745522469 d:\cpp-dodatki\wxwidgets-3.2.8-mono64\include\wx\generic\statline.h
 
+1767967592 source:c:\users\iza\onedrive\pulpit\szabrownik-main\resource.rc
+	"wx/msw/wx.rc"
+
+1767967592 source:c:\users\iza\onedrive\pulpit\szabrownik-main\szabrownikapp.cpp
+	"SzabrownikApp.h"
+	"SzabrownikMain.h"
+	<wx/image.h>
+
+1767967592 c:\users\iza\onedrive\pulpit\szabrownik-main\szabrownikapp.h
+	<wx/app.h>
+
+1767970908 c:\users\iza\onedrive\pulpit\szabrownik-main\szabrownikmain.h
+	<map>
+	<vector>
+	<wx/bmpbuttn.h>
+	<wx/button.h>
+	<wx/frame.h>
+	<wx/panel.h>
+	<wx/sizer.h>
+	<wx/statbmp.h>
+	<wx/statline.h>
+	<wx/stattext.h>
+
+1745522469 c:\cpp-dodatki\wxwidgets-3.2.8-mono64\include\wx\statline.h
+	"wx/defs.h"
+	"wx/control.h"
+	"wx/univ/statline.h"
+	"wx/msw/statline.h"
+	"wx/gtk/statline.h"
+	"wx/gtk1/statline.h"
+	"wx/osx/statline.h"
+	"wx/qt/statline.h"
+	"wx/generic/statline.h"
+
+1745522469 c:\cpp-dodatki\wxwidgets-3.2.8-mono64\include\wx\univ\statline.h
+
+1745522469 c:\cpp-dodatki\wxwidgets-3.2.8-mono64\include\wx\msw\statline.h
+
+1745522469 c:\cpp-dodatki\wxwidgets-3.2.8-mono64\include\wx\gtk\statline.h
+	"wx/defs.h"
+
+1745522469 c:\cpp-dodatki\wxwidgets-3.2.8-mono64\include\wx\gtk1\statline.h
+	"wx/defs.h"
+
+1745522469 c:\cpp-dodatki\wxwidgets-3.2.8-mono64\include\wx\osx\statline.h
+
+1745522469 c:\cpp-dodatki\wxwidgets-3.2.8-mono64\include\wx\qt\statline.h
+
+1745522469 c:\cpp-dodatki\wxwidgets-3.2.8-mono64\include\wx\generic\statline.h
+
+1767970928 source:c:\users\iza\onedrive\pulpit\szabrownik-main\szabrownikmain.cpp
+	"SzabrownikMain.h"
+	<wx/msgdlg.h>
+	<wx/bitmap.h>
+	<wx/font.h>
+	<wx/image.h>
+	<wx/intl.h>
+	<wx/settings.h>
+	<wx/string.h>
+	<memory>
+	<vector>
+	"SzabrownikDwa.h"
+	<iostream>
+	<string>
+
+1767970908 c:\users\iza\onedrive\pulpit\szabrownik-main\szabrownikdwa.h
+	<map>
+	<vector>
+	<iostream>
+	<fstream>
+
+1767987929 source:d:\pulpit\projektcpp\szabrownik-mich\resource.rc
+	"wx/msw/wx.rc"
+
+1767987929 source:d:\pulpit\projektcpp\szabrownik-mich\szabrownikapp.cpp
+	"SzabrownikApp.h"
+	"SzabrownikMain.h"
+	<wx/image.h>
+
+1767987929 d:\pulpit\projektcpp\szabrownik-mich\szabrownikapp.h
+	<wx/app.h>
+
+1768136250 d:\pulpit\projektcpp\szabrownik-mich\szabrownikmain.h
+	<map>
+	<vector>
+	"Test.h"
+	<wx/bmpbuttn.h>
+	<wx/button.h>
+	<wx/frame.h>
+	<wx/panel.h>
+	<wx/sizer.h>
+	<wx/statbmp.h>
+	<wx/statline.h>
+	<wx/stattext.h>
+
+1768136241 source:d:\pulpit\projektcpp\szabrownik-mich\szabrownikmain.cpp
+	"SzabrownikMain.h"
+	<wx/msgdlg.h>
+	<wx/bitmap.h>
+	<wx/font.h>
+	<wx/image.h>
+	<wx/intl.h>
+	<wx/settings.h>
+	<wx/string.h>
+	<memory>
+	<vector>
+	"SzabrownikDwa.h"
+	<iostream>
+	<string>
+
+1768135543 d:\pulpit\projektcpp\szabrownik-mich\szabrownikdwa.h
+	<map>
+	<vector>
+	<iostream>
+	<fstream>
+
+1768135968 source:d:\pulpit\projektcpp\szabrownik-mich\test.cpp
+	"Test.h"
+	<wx/intl.h>
+	<wx/string.h>
+
+1768135961 d:\pulpit\projektcpp\szabrownik-mich\test.h
+	<wx/frame.h>
+	<wx/sizer.h>
+	<wx/stattext.h>
+
+1767987930 source:e:\projektcpp\szabrownik-mich\resource.rc
+	"wx/msw/wx.rc"
+
+1767987930 source:e:\projektcpp\szabrownik-mich\szabrownikapp.cpp
+	"SzabrownikApp.h"
+	"SzabrownikMain.h"
+	<wx/image.h>
+
+1767987930 e:\projektcpp\szabrownik-mich\szabrownikapp.h
+	<wx/app.h>
+
+1768136252 e:\projektcpp\szabrownik-mich\szabrownikmain.h
+	<map>
+	<vector>
+	"Test.h"
+	<wx/bmpbuttn.h>
+	<wx/button.h>
+	<wx/frame.h>
+	<wx/panel.h>
+	<wx/sizer.h>
+	<wx/statbmp.h>
+	<wx/statline.h>
+	<wx/stattext.h>
+
+1768135962 e:\projektcpp\szabrownik-mich\test.h
+	<wx/frame.h>
+	<wx/sizer.h>
+	<wx/stattext.h>
+
+1768136242 source:e:\projektcpp\szabrownik-mich\szabrownikmain.cpp
+	"SzabrownikMain.h"
+	<wx/msgdlg.h>
+	<wx/bitmap.h>
+	<wx/font.h>
+	<wx/image.h>
+	<wx/intl.h>
+	<wx/settings.h>
+	<wx/string.h>
+	<memory>
+	<vector>
+	"SzabrownikDwa.h"
+	<iostream>
+	<string>
+
+1768135544 e:\projektcpp\szabrownik-mich\szabrownikdwa.h
+	<map>
+	<vector>
+	<iostream>
+	<fstream>
+
+1768135970 source:e:\projektcpp\szabrownik-mich\test.cpp
+	"Test.h"
+	<wx/intl.h>
+	<wx/string.h>
+
+1767987930 source:e:\szabrownik\resource.rc
+	"wx/msw/wx.rc"
+
+1767987930 source:e:\szabrownik\szabrownikapp.cpp
+	"SzabrownikApp.h"
+	"SzabrownikMain.h"
+	<wx/image.h>
+
+1767987930 e:\szabrownik\szabrownikapp.h
+	<wx/app.h>
+
+1768581852 e:\szabrownik\szabrownikmain.h
+	<map>
+	<vector>
+	"Test.h"
+	<wx/bmpbuttn.h>
+	<wx/button.h>
+	<wx/frame.h>
+	<wx/panel.h>
+	<wx/sizer.h>
+	<wx/statbmp.h>
+	<wx/statline.h>
+	<wx/stattext.h>
+
+1768135962 e:\szabrownik\test.h
+	<wx/frame.h>
+	<wx/sizer.h>
+	<wx/stattext.h>
+
+1768581940 source:e:\szabrownik\szabrownikmain.cpp
+	"SzabrownikMain.h"
+	<wx/msgdlg.h>
+	<wx/bitmap.h>
+	<wx/font.h>
+	<wx/image.h>
+	<wx/intl.h>
+	<wx/settings.h>
+	<wx/string.h>
+	<memory>
+	<vector>
+	"SzabrownikDwa.h"
+	<iostream>
+	<string>
+
+1768581872 e:\szabrownik\szabrownikdwa.h
+	<map>
+	<vector>
+	<iostream>
+	<fstream>
+
+1768135970 source:e:\szabrownik\test.cpp
+	"Test.h"
+	<wx/intl.h>
+	<wx/string.h>
+
+1767987930 source:h:\szabrownik\resource.rc
+	"wx/msw/wx.rc"
+
+1767987930 source:h:\szabrownik\szabrownikapp.cpp
+	"SzabrownikApp.h"
+	"SzabrownikMain.h"
+	<wx/image.h>
+
+1767987930 h:\szabrownik\szabrownikapp.h
+	<wx/app.h>
+
+1768686664 h:\szabrownik\szabrownikmain.h
+	<map>
+	<vector>
+	"Test.h"
+	<wx/bmpbuttn.h>
+	<wx/button.h>
+	<wx/frame.h>
+	<wx/panel.h>
+	<wx/sizer.h>
+	<wx/statbmp.h>
+	<wx/statline.h>
+	<wx/stattext.h>
+
+1768135962 h:\szabrownik\test.h
+	<wx/frame.h>
+	<wx/sizer.h>
+	<wx/stattext.h>
+
+1768686790 source:h:\szabrownik\szabrownikmain.cpp
+	"SzabrownikMain.h"
+	<wx/msgdlg.h>
+	<wx/bitmap.h>
+	<wx/font.h>
+	<wx/image.h>
+	<wx/intl.h>
+	<wx/settings.h>
+	<wx/string.h>
+	<memory>
+	<vector>
+	"SzabrownikDwa.h"
+	<iostream>
+	<string>
+
+1768687864 h:\szabrownik\szabrownikdwa.h
+	<map>
+	<vector>
+	<iostream>
+	<fstream>
+
+1768135970 source:h:\szabrownik\test.cpp
+	"Test.h"
+	<wx/intl.h>
+	<wx/string.h>
+

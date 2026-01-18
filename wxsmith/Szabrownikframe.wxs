@@ -7,7 +7,8 @@
 		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
 			<object class="sizeritem">
 				<object class="wxPanel" name="ID_PANEL1" variable="panel_gra" member="yes">
-					<size>1450,-1</size>
+					<size>400,175</size>
+					<bg>wxSYS_COLOUR_APPWORKSPACE</bg>
 					<object class="wxFlexGridSizer" variable="FlexGridSizer1" member="no">
 						<cols>3</cols>
 						<object class="sizeritem">
@@ -18,6 +19,14 @@
 										<object class="sizeritem">
 											<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
 												<label>POSTAĆ</label>
+												<font>
+													<size>10</size>
+													<style>normal</style>
+													<weight>bold</weight>
+													<underlined>0</underlined>
+													<family>swiss</family>
+													<face>Arial</face>
+												</font>
 											</object>
 											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 											<border>5</border>
@@ -45,7 +54,7 @@
 											<object class="wxStaticText" name="ID_STATICTEXT16" variable="StaticText15" member="yes">
 												<label>Label</label>
 											</object>
-											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
 											<border>5</border>
 											<option>1</option>
 										</object>
@@ -62,7 +71,7 @@
 											<object class="wxStaticText" name="ID_STATICTEXT17" variable="StaticText16" member="yes">
 												<label>Label</label>
 											</object>
-											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
 											<border>5</border>
 											<option>1</option>
 										</object>
@@ -79,7 +88,7 @@
 											<object class="wxStaticText" name="ID_STATICTEXT18" variable="StaticText17" member="yes">
 												<label>Label</label>
 											</object>
-											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
 											<border>5</border>
 											<option>1</option>
 										</object>
@@ -96,7 +105,7 @@
 											<object class="wxStaticText" name="ID_STATICTEXT19" variable="StaticText18" member="yes">
 												<label>Label</label>
 											</object>
-											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
 											<border>5</border>
 											<option>1</option>
 										</object>
@@ -113,7 +122,7 @@
 											<object class="wxStaticText" name="ID_STATICTEXT20" variable="StaticText19" member="yes">
 												<label>Label</label>
 											</object>
-											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
 											<border>5</border>
 											<option>1</option>
 										</object>
@@ -130,7 +139,7 @@
 											<object class="wxStaticText" name="ID_STATICTEXT21" variable="StaticText20" member="yes">
 												<label>Label</label>
 											</object>
-											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
 											<border>5</border>
 											<option>1</option>
 										</object>
@@ -147,7 +156,7 @@
 											<object class="wxStaticText" name="ID_STATICTEXT22" variable="StaticText21" member="yes">
 												<label>Label</label>
 											</object>
-											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
 											<border>5</border>
 											<option>1</option>
 										</object>
@@ -164,7 +173,7 @@
 											<object class="wxStaticText" name="ID_STATICTEXT23" variable="StaticText22" member="yes">
 												<label>Label</label>
 											</object>
-											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
 											<border>5</border>
 											<option>1</option>
 										</object>
@@ -175,7 +184,9 @@
 								</object>
 								<object class="sizeritem">
 									<object class="wxStaticLine" name="ID_STATICLINE3" variable="StaticLine3" member="yes">
-										<size>124,2</size>
+										<size>150,2</size>
+										<fg>wxSYS_COLOUR_MENUTEXT</fg>
+										<bg>wxSYS_COLOUR_MENUTEXT</bg>
 									</object>
 									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 									<border>5</border>
@@ -183,8 +194,8 @@
 								</object>
 								<object class="sizeritem">
 									<object class="wxFlexGridSizer" variable="FlexGridSizer7" member="no">
-										<cols>2</cols>
-										<rows>2</rows>
+										<cols>3</cols>
+										<rows>3</rows>
 										<object class="sizeritem">
 											<object class="wxStaticText" name="ID_STATICTEXT24" variable="StaticText23" member="yes">
 												<label>ZŁOTO</label>
@@ -206,6 +217,14 @@
 											<object class="wxStaticText" name="ID_STATICTEXT25" variable="StaticText24" member="yes">
 												<label>Label</label>
 												<style>wxALIGN_RIGHT</style>
+											</object>
+											<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticBitmap" name="ID_STATICBITMAP2" variable="StaticBitmap2" member="yes">
+												<bitmap>Moneta.png</bitmap>
 											</object>
 											<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
 											<border>5</border>
@@ -233,12 +252,147 @@
 												<label>Label</label>
 												<style>wxALIGN_RIGHT</style>
 											</object>
-											<flag>wxALL|wxALIGN_CENTER_VERTICAL</flag>
+											<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticBitmap" name="ID_STATICBITMAP3" variable="StaticBitmap3" member="yes">
+												<bitmap>Serce.png</bitmap>
+											</object>
+											<flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT12" variable="StaticText12" member="yes">
+												<label>ZBROJA</label>
+												<font>
+													<size>10</size>
+													<style>normal</style>
+													<weight>bold</weight>
+													<underlined>0</underlined>
+													<family>default</family>
+													<face>Arial</face>
+												</font>
+											</object>
+											<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT15" variable="StaticText36" member="yes">
+												<label>Label</label>
+											</object>
+											<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
 											<border>5</border>
 											<option>1</option>
 										</object>
 									</object>
 									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticLine" name="ID_STATICLINE1" variable="StaticLine1" member="yes">
+										<size>150,-1</size>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxBoxSizer" variable="BoxSizer3" member="no">
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT28" variable="StaticText27" member="yes">
+												<label>EKWIPUNEK</label>
+												<font>
+													<size>10</size>
+													<style>normal</style>
+													<weight>bold</weight>
+													<underlined>0</underlined>
+													<family>default</family>
+													<face>Arial</face>
+												</font>
+											</object>
+											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxFlexGridSizer" variable="FlexGridSizer8" member="no">
+										<cols>2</cols>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT29" variable="StaticText28" member="yes">
+												<label>Broń:</label>
+											</object>
+											<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT30" variable="StaticText29" member="yes">
+												<label>Brak</label>
+											</object>
+											<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT31" variable="StaticText30" member="yes">
+												<label>Zbroja:</label>
+											</object>
+											<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT32" variable="StaticText31" member="yes">
+												<label>Brak</label>
+											</object>
+											<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT33" variable="StaticText32" member="yes">
+												<label>Akcesorium:</label>
+											</object>
+											<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT34" variable="StaticText33" member="yes">
+												<label>Brak</label>
+											</object>
+											<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT35" variable="StaticText34" member="yes">
+												<label>Przedmiot:</label>
+											</object>
+											<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT36" variable="StaticText35" member="yes">
+												<label>Brak</label>
+											</object>
+											<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+									</object>
+									<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
 									<border>5</border>
 									<option>1</option>
 								</object>
@@ -280,10 +434,15 @@
 										<object class="sizeritem">
 											<object class="wxBitmapButton" name="ID_BITMAPBUTTON1" variable="BitmapButton1" member="yes">
 												<bitmap>Nieznany.png</bitmap>
+												<size>100,100</size>
+												<fg>wxSYS_COLOUR_APPWORKSPACE</fg>
+												<bg>wxSYS_COLOUR_APPWORKSPACE</bg>
+												<minsize>100,100</minsize>
+												<maxsize>100,100</maxsize>
 												<handler function="OnBitmapButton1Click" entry="EVT_BUTTON" />
 											</object>
 											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
-											<border>5</border>
+											<border>2</border>
 											<option>1</option>
 										</object>
 									</object>
@@ -296,6 +455,7 @@
 										<object class="sizeritem">
 											<object class="wxButton" name="ID_BUTTON3" variable="Button3" member="yes">
 												<label>Nowa Gra</label>
+												<bg>wxSYS_COLOUR_SCROLLBAR</bg>
 												<handler function="OnButton3Click" entry="EVT_BUTTON" />
 											</object>
 											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
@@ -305,6 +465,7 @@
 										<object class="sizeritem">
 											<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
 												<label>Odkryj Mape</label>
+												<bg>wxSYS_COLOUR_SCROLLBAR</bg>
 												<handler function="OnButton1Click" entry="EVT_BUTTON" />
 											</object>
 											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
@@ -351,14 +512,6 @@
 									<object class="wxFlexGridSizer" variable="FlexGridSizer6" member="no">
 										<cols>1</cols>
 										<object class="sizeritem">
-											<object class="wxStaticText" name="ID_STATICTEXT12" variable="StaticText12" member="yes">
-												<label>Id</label>
-											</object>
-											<flag>wxALL</flag>
-											<border>5</border>
-											<option>1</option>
-										</object>
-										<object class="sizeritem">
 											<object class="wxStaticText" name="ID_STATICTEXT13" variable="StaticText13" member="yes">
 												<label>Zawartość</label>
 											</object>
@@ -368,7 +521,7 @@
 										</object>
 										<object class="sizeritem">
 											<object class="wxStaticText" name="ID_STATICTEXT14" variable="StaticText14" member="yes">
-												<label>Zawartosc__debug</label>
+												<label>Zawartosc2</label>
 											</object>
 											<flag>wxALL</flag>
 											<border>5</border>
@@ -385,6 +538,7 @@
 										<object class="sizeritem">
 											<object class="wxButton" name="ID_BUTTON2" variable="Button2" member="yes">
 												<label>Wejdź</label>
+												<bg>wxSYS_COLOUR_SCROLLBAR</bg>
 												<handler function="OnButton2Click" entry="EVT_BUTTON" />
 											</object>
 											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
@@ -394,6 +548,7 @@
 										<object class="sizeritem">
 											<object class="wxButton" name="ID_BUTTON7" variable="Button4" member="yes">
 												<label>Interakcja</label>
+												<bg>wxSYS_COLOUR_SCROLLBAR</bg>
 												<handler function="OnButtonInterakcjaClick" entry="EVT_BUTTON" />
 											</object>
 											<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
@@ -420,13 +575,14 @@
 				<object class="wxPanel" name="ID_PANEL2" variable="Panel2" member="yes">
 					<size>50,50</size>
 					<hidden>1</hidden>
+					<fg>wxSYS_COLOUR_APPWORKSPACE</fg>
+					<bg>wxSYS_COLOUR_APPWORKSPACE</bg>
 					<minsize>500,-1</minsize>
-					<maxsize>-1,-1</maxsize>
 					<object class="wxBoxSizer" variable="BoxSizer8" member="no">
 						<orient>wxVERTICAL</orient>
 						<object class="sizeritem">
-							<object class="wxStaticText" name="ID_STATICTEXT15" variable="TEXT_TYTUL" member="yes">
-								<label>Szabrownik</label>
+							<object class="wxStaticBitmap" name="ID_STATICBITMAP4" variable="StaticBitmap4" member="yes">
+								<bitmap>H:\Szabrownik\Tytul.png</bitmap>
 							</object>
 							<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 							<border>5</border>
@@ -435,6 +591,8 @@
 						<object class="sizeritem">
 							<object class="wxButton" name="ID_BUTTON4" variable="GUZIK_START" member="yes">
 								<label>START</label>
+								<bg>wxSYS_COLOUR_SCROLLBAR</bg>
+								<maxsize>-1,500</maxsize>
 								<handler function="OnButton4Click" entry="EVT_BUTTON" />
 							</object>
 							<flag>wxALL|wxEXPAND</flag>
@@ -444,6 +602,8 @@
 						<object class="sizeritem">
 							<object class="wxButton" name="ID_BUTTON5" variable="GUZIK_CREDITS" member="yes">
 								<label>CREDITS</label>
+								<bg>wxSYS_COLOUR_SCROLLBAR</bg>
+								<maxsize>-1,500</maxsize>
 								<handler function="OnGUZIK_CREDITSClick" entry="EVT_BUTTON" />
 							</object>
 							<flag>wxALL|wxEXPAND</flag>
@@ -453,6 +613,8 @@
 						<object class="sizeritem">
 							<object class="wxButton" name="ID_BUTTON6" variable="GUZIK_WYJSCIE" member="yes">
 								<label>WYJŚCIE</label>
+								<bg>wxSYS_COLOUR_SCROLLBAR</bg>
+								<maxsize>-1,500</maxsize>
 								<handler function="OnGUZIK_WYJSCIEClick" entry="EVT_BUTTON" />
 							</object>
 							<flag>wxALL|wxEXPAND</flag>
@@ -461,7 +623,7 @@
 						</object>
 					</object>
 				</object>
-				<flag>wxALL</flag>
+				<flag>wxALL|wxEXPAND</flag>
 				<border>5</border>
 				<option>1</option>
 			</object>
