@@ -81,6 +81,7 @@ const wxWindowID SzabrownikFrame::ID_STATICTEXT27 = wxNewId();
 const wxWindowID SzabrownikFrame::ID_STATICBITMAP3 = wxNewId();
 const wxWindowID SzabrownikFrame::ID_STATICTEXT12 = wxNewId();
 const wxWindowID SzabrownikFrame::ID_STATICTEXT15 = wxNewId();
+const wxWindowID SzabrownikFrame::ID_STATICBITMAP5 = wxNewId();
 const wxWindowID SzabrownikFrame::ID_STATICLINE1 = wxNewId();
 const wxWindowID SzabrownikFrame::ID_STATICTEXT28 = wxNewId();
 const wxWindowID SzabrownikFrame::ID_STATICTEXT29 = wxNewId();
@@ -135,7 +136,7 @@ SzabrownikFrame::SzabrownikFrame(wxWindow* parent,wxWindowID id)
     wxFlexGridSizer* FlexGridSizer8;
     wxGridSizer* GridSizer1;
 
-    Create(parent, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("wxID_ANY"));
+    Create(parent, wxID_ANY, _("Szabrownik"), wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("wxID_ANY"));
     SetBackgroundColour(wxSystemSettings::GetColour(wxSYS_COLOUR_BTNFACE));
     BoxSizer1 = new wxBoxSizer(wxHORIZONTAL);
     panel_gra = new wxPanel(this, ID_PANEL1, wxDefaultPosition, wxSize(400,175), wxTAB_TRAVERSAL, _T("ID_PANEL1"));
@@ -209,6 +210,8 @@ SzabrownikFrame::SzabrownikFrame(wxWindow* parent,wxWindowID id)
     FlexGridSizer7->Add(StaticText12, 1, wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 5);
     StaticText36 = new wxStaticText(panel_gra, ID_STATICTEXT15, _("Label"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT15"));
     FlexGridSizer7->Add(StaticText36, 1, wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 5);
+    StaticBitmap5 = new wxStaticBitmap(panel_gra, ID_STATICBITMAP5, wxBitmap(wxImage(_T("Tarcza.png"))), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICBITMAP5"));
+    FlexGridSizer7->Add(StaticBitmap5, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     FlexGridSizer2->Add(FlexGridSizer7, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     StaticLine1 = new wxStaticLine(panel_gra, ID_STATICLINE1, wxDefaultPosition, wxSize(150,-1), wxLI_HORIZONTAL, _T("ID_STATICLINE1"));
     FlexGridSizer2->Add(StaticLine1, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
@@ -235,14 +238,14 @@ SzabrownikFrame::SzabrownikFrame(wxWindow* parent,wxWindowID id)
     FlexGridSizer8->Add(StaticText34, 1, wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 5);
     StaticText35 = new wxStaticText(panel_gra, ID_STATICTEXT36, _("Brak"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT36"));
     FlexGridSizer8->Add(StaticText35, 1, wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 5);
-    FlexGridSizer2->Add(FlexGridSizer8, 1, wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL, 5);
+    FlexGridSizer2->Add(FlexGridSizer8, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     FlexGridSizer1->Add(FlexGridSizer2, 1, wxALL|wxEXPAND, 5);
     FlexGridSizer3 = new wxFlexGridSizer(0, 1, 0, 0);
     BoxSizer2 = new wxBoxSizer(wxHORIZONTAL);
     StaticText2 = new wxStaticText(panel_gra, ID_STATICTEXT2, _("LOCH | POZIOM 0"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT2"));
-    wxFont StaticText2Font(20,wxFONTFAMILY_DEFAULT,wxFONTSTYLE_NORMAL,wxFONTWEIGHT_BOLD,false,_T("Arial"),wxFONTENCODING_DEFAULT);
+    wxFont StaticText2Font(20,wxFONTFAMILY_DECORATIVE,wxFONTSTYLE_ITALIC,wxFONTWEIGHT_BOLD,false,_T("Tempus Sans ITC"),wxFONTENCODING_DEFAULT);
     StaticText2->SetFont(StaticText2Font);
-    BoxSizer2->Add(StaticText2, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    BoxSizer2->Add(StaticText2, 1, wxALL|wxALIGN_CENTER_VERTICAL, 5);
     FlexGridSizer3->Add(BoxSizer2, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     GridSizer1 = new wxGridSizer(7, 7, 0, 0);
     BitmapButton1 = new wxBitmapButton(panel_gra, ID_BITMAPBUTTON1, wxBitmap(wxImage(_T("Nieznany.png"))), wxDefaultPosition, wxSize(100,100), wxBU_AUTODRAW, wxDefaultValidator, _T("ID_BITMAPBUTTON1"));
@@ -291,7 +294,7 @@ SzabrownikFrame::SzabrownikFrame(wxWindow* parent,wxWindowID id)
     Panel2->SetForegroundColour(wxSystemSettings::GetColour(wxSYS_COLOUR_APPWORKSPACE));
     Panel2->SetBackgroundColour(wxSystemSettings::GetColour(wxSYS_COLOUR_APPWORKSPACE));
     BoxSizer8 = new wxBoxSizer(wxVERTICAL);
-    StaticBitmap4 = new wxStaticBitmap(Panel2, ID_STATICBITMAP4, wxBitmap(wxImage(_T("H:\\Szabrownik\\Tytul.png"))), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICBITMAP4"));
+    StaticBitmap4 = new wxStaticBitmap(Panel2, ID_STATICBITMAP4, wxBitmap(wxImage(_T("Tytul.png"))), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICBITMAP4"));
     BoxSizer8->Add(StaticBitmap4, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     GUZIK_START = new wxButton(Panel2, ID_BUTTON4, _("START"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON4"));
     GUZIK_START->SetMaxSize(wxSize(-1,500));
@@ -423,7 +426,7 @@ void SzabrownikFrame::OnButton4Click(wxCommandEvent& event)//guzik startowy chow
     Layout();
     GuzikStartGryFunkcja();
     panel_gra->SetMinSize(wxSize(1450, -1));
-
+    this -> Layout();
     this->Fit();
     this->Centre();
 

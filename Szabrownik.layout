@@ -2,27 +2,9 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Release" />
-	<File name="SzabrownikDwa.h" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+	<File name="SzabrownikMain.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="-3" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="24479" topLine="116" />
-		</Cursor>
-		<Folding>
-			<Collapse line="8" />
-			<Collapse line="46" />
-			<Collapse line="75" />
-			<Collapse line="177" />
-			<Collapse line="189" />
-			<Collapse line="220" />
-			<Collapse line="238" />
-			<Collapse line="425" />
-			<Collapse line="482" />
-			<Collapse line="645" />
-			<Collapse line="720" />
-		</Folding>
-	</File>
-	<File name="SzabrownikApp.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="403" topLine="0" />
+			<Cursor1 position="26740" topLine="424" />
 		</Cursor>
 	</File>
 	<File name="SzabrownikApp.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -30,14 +12,31 @@
 			<Cursor1 position="681" topLine="4" />
 		</Cursor>
 	</File>
+	<File name="SzabrownikApp.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="403" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="SzabrownikDwa.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="10442" topLine="192" />
+		</Cursor>
+		<Folding>
+			<Collapse line="8" />
+			<Collapse line="46" />
+			<Collapse line="177" />
+			<Collapse line="189" />
+			<Collapse line="220" />
+		</Folding>
+	</File>
+	<File name="resource.rc" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="16" topLine="0" />
+		</Cursor>
+	</File>
 	<File name="SzabrownikMain.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="2538" topLine="39" />
-		</Cursor>
-	</File>
-	<File name="SzabrownikMain.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="23731" topLine="54" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

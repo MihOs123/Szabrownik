@@ -5549,3 +5549,121 @@
 	<wx/intl.h>
 	<wx/string.h>
 
+1768767410 source:c:\users\anton\desktop\szabrownik\szabrownik-main\resource.rc
+	"wx/msw/wx.rc"
+
+1768760206 source:c:\users\anton\desktop\szabrownik\szabrownik-main\szabrownikapp.cpp
+	"SzabrownikApp.h"
+	"SzabrownikMain.h"
+	<wx/image.h>
+
+1768760206 c:\users\anton\desktop\szabrownik\szabrownik-main\szabrownikapp.h
+	<wx/app.h>
+
+1768763475 c:\users\anton\desktop\szabrownik\szabrownik-main\szabrownikmain.h
+	<map>
+	<vector>
+	"Test.h"
+	<wx/bmpbuttn.h>
+	<wx/button.h>
+	<wx/frame.h>
+	<wx/panel.h>
+	<wx/sizer.h>
+	<wx/statbmp.h>
+	<wx/statline.h>
+	<wx/stattext.h>
+
+1768760206 c:\users\anton\desktop\szabrownik\szabrownik-main\test.h
+	<wx/frame.h>
+	<wx/sizer.h>
+	<wx/stattext.h>
+
+1745522469 c:\wxwidgets-3.2.8-mono64\include\wx\statbmp.h
+	"wx/defs.h"
+	"wx/control.h"
+	"wx/bmpbndl.h"
+	"wx/icon.h"
+	"wx/univ/statbmp.h"
+	"wx/msw/statbmp.h"
+	"wx/motif/statbmp.h"
+	"wx/gtk/statbmp.h"
+	"wx/gtk1/statbmp.h"
+	"wx/osx/statbmp.h"
+	"wx/qt/statbmp.h"
+
+1745522469 c:\wxwidgets-3.2.8-mono64\include\wx\univ\statbmp.h
+	"wx/bitmap.h"
+
+1745522469 c:\wxwidgets-3.2.8-mono64\include\wx\msw\statbmp.h
+	"wx/control.h"
+	"wx/icon.h"
+	"wx/bitmap.h"
+
+1745522469 c:\wxwidgets-3.2.8-mono64\include\wx\motif\statbmp.h
+	"wx/motif/bmpmotif.h"
+	"wx/icon.h"
+
+1745522469 c:\wxwidgets-3.2.8-mono64\include\wx\gtk\statbmp.h
+	"wx/icon.h"
+
+1745522469 c:\wxwidgets-3.2.8-mono64\include\wx\gtk1\statbmp.h
+	"wx/icon.h"
+
+1745522469 c:\wxwidgets-3.2.8-mono64\include\wx\osx\statbmp.h
+	"wx/statbmp.h"
+
+1745522469 c:\wxwidgets-3.2.8-mono64\include\wx\qt\statbmp.h
+
+1745522469 c:\wxwidgets-3.2.8-mono64\include\wx\statline.h
+	"wx/defs.h"
+	"wx/control.h"
+	"wx/univ/statline.h"
+	"wx/msw/statline.h"
+	"wx/gtk/statline.h"
+	"wx/gtk1/statline.h"
+	"wx/osx/statline.h"
+	"wx/qt/statline.h"
+	"wx/generic/statline.h"
+
+1745522469 c:\wxwidgets-3.2.8-mono64\include\wx\univ\statline.h
+
+1745522469 c:\wxwidgets-3.2.8-mono64\include\wx\msw\statline.h
+
+1745522469 c:\wxwidgets-3.2.8-mono64\include\wx\gtk\statline.h
+	"wx/defs.h"
+
+1745522469 c:\wxwidgets-3.2.8-mono64\include\wx\gtk1\statline.h
+	"wx/defs.h"
+
+1745522469 c:\wxwidgets-3.2.8-mono64\include\wx\osx\statline.h
+
+1745522469 c:\wxwidgets-3.2.8-mono64\include\wx\qt\statline.h
+
+1745522469 c:\wxwidgets-3.2.8-mono64\include\wx\generic\statline.h
+
+1768766776 source:c:\users\anton\desktop\szabrownik\szabrownik-main\szabrownikmain.cpp
+	"SzabrownikMain.h"
+	<wx/msgdlg.h>
+	<wx/bitmap.h>
+	<wx/font.h>
+	<wx/image.h>
+	<wx/intl.h>
+	<wx/settings.h>
+	<wx/string.h>
+	<memory>
+	<vector>
+	"SzabrownikDwa.h"
+	<iostream>
+	<string>
+
+1768766452 c:\users\anton\desktop\szabrownik\szabrownik-main\szabrownikdwa.h
+	<map>
+	<vector>
+	<iostream>
+	<fstream>
+
+1768760206 source:c:\users\anton\desktop\szabrownik\szabrownik-main\test.cpp
+	"Test.h"
+	<wx/intl.h>
+	<wx/string.h>
+

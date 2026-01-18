@@ -271,13 +271,17 @@ void SzabrownikFrame::InterakcjaZPolem(){
     //POKÓJ PUSTY
 
     //POKÓJ-ŚCIANA (DETONACJA)
-    if(listapokoi[Bohater.KliknietyPokoj].Zawartosc == 2 && listapokoi[Bohater.KliknietyPokoj].Sasiad == true){
+    if(listapokoi[Bohater.KliknietyPokoj].Zawartosc == 2 && listapokoi[Bohater.KliknietyPokoj].Sasiad == true && Bohater.Przedmiot == 1){//poprawiona bomba
         listapokoi[Bohater.KliknietyPokoj].Zawartosc = 1;
         listapokoi[Bohater.KliknietyPokoj].Obraz = "Nic.png";
         listapokoi[Bohater.KliknietyPokoj].ObrazGr = "NicG.png";
         listapokoi[Bohater.KliknietyPokoj].ObrazK = "NicK.png";
         listapokoi[Bohater.KliknietyPokoj].ObrazGrK = "NicGK.png";
         Bohater.Przedmiot = 0;
+        OdswiezStaty();
+        KlikPoleFunkcja(Bohater.KliknietyPokoj);
+
+
     }
 
     //POKÓJ-ŚCIANA (DETONACJA)
@@ -514,6 +518,9 @@ void SzabrownikFrame::KlikPoleFunkcja(int a){
                     Button4->Enable(true);
                     Button4->SetLabel("Zdetonuj");
                 }
+
+
+
                 else{
                     Button4->Enable(false);
                 }

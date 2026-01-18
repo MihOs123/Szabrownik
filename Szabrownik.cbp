@@ -72,6 +72,7 @@
 		<Unit filename="SzabrownikMain.h" />
 		<Unit filename="Test.cpp" />
 		<Unit filename="Test.h" />
+		<Unit filename="goat2.ico" />
 		<Unit filename="resource.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>

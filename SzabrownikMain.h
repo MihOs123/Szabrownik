@@ -154,6 +154,7 @@ class SzabrownikFrame: public wxFrame
         static const wxWindowID ID_STATICBITMAP3;
         static const wxWindowID ID_STATICTEXT12;
         static const wxWindowID ID_STATICTEXT15;
+        static const wxWindowID ID_STATICBITMAP5;
         static const wxWindowID ID_STATICLINE1;
         static const wxWindowID ID_STATICTEXT28;
         static const wxWindowID ID_STATICTEXT29;
@@ -197,6 +198,7 @@ class SzabrownikFrame: public wxFrame
         wxStaticBitmap* StaticBitmap2;
         wxStaticBitmap* StaticBitmap3;
         wxStaticBitmap* StaticBitmap4;
+        wxStaticBitmap* StaticBitmap5;
         wxStaticLine* StaticLine1;
         wxStaticLine* StaticLine3;
         wxStaticText* StaticText10;
